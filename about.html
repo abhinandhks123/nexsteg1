@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Section with Triangles</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logo.png" class="logo" alt="Logo"></div>
+    <nav>
+      <a href="index.html" >Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="trainers.html">Trainers</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="success.html">Success Story</a>
+    </nav>
+    <a href="#" class="cta-header-btn">Join Us Now →</a>
+  </header>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero-narrow-triangle">
+    <div class="top-triangle"></div>
+    <div class="bottom-triangle"></div>
+
+    <div class="hero-content">
+      <h1>REDEFINING<br>FITNESS IN<br>KUWAIT</h1>
+      <div class="video-button">
+        <img src="thumbnail.jpg" alt="Play" />
+        <span>Watch Our Fitness Journey</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services-section">
+    <div class="vision">
+      <div class="vision-text">
+        <h3>From vision to <br><span>victory</span></h3>
+        <p>
+          NEXSTEG was founded in May 2024 with a bold mission —
+          to elevate the fitness experience in Kuwait. Born from a
+          passion for health, strength, and community, we’ve built
+          more than just a gym; we’ve built a movement.
+        </p>
+      </div>
+      <div class="vision-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-hSma-BRzoo?si=ZBAT1GT7jwV5fPSS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  
+    <h2 class="section-title">What We Offer?</h2>
+  
+    <div class="service-cards">
+      <div class="card">
+        <div class="icon"><i class="fas fa-dumbbell"></i></div>
+        <h4>Personal Training</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <h4>Group Fitness Classes</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fas fa-heartbeat"></i></div>
+        <h4>Cardio & Strength Equipments</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fas fa-apple-alt"></i></div>
+        <h4>Nutritional Counselling</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fas fa-lock"></i></div>
+        <h4>Locker Room Facilities</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fas fa-snowflake"></i></div>
+        <h4>Ice Bath</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fas fa-hot-tub"></i></div>
+        <h4>Sauna Bath</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fas fa-spa"></i></div>
+        <h4>Jacuzzi</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><i class="fas fa-water"></i></div>
+        <h4>Steam Bath</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum faucibus interdum.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="about-section">
+    <div class="about-overlay">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod, sapien a tincidunt hendrerit, ipsum diam suscipit massa.
+          <br><br>
+          Consectetur adipiscing elit. Vestibulum faucibus interdum nunc. Et eleifend neque sagittis et.
+        </p>
+        <button class="btn-purple">Learn More <i class="fas fa-arrow-right"></i></button>
+        <div class="about-icons">
+          <img src="trainer1.jpg" alt="icon1">
+          <img src="trainer2.jpg" alt="icon2">
+          <img src="trainer3.jpg" alt="icon3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="pricing-section">
+    <h2>Membership Pricing</h2>
+  
+    <div class="toggle-btns">
+      <button class="toggle active" id="btn-without">Without Trainer</button>
+      <button class="toggle" id="btn-with">With Trainer</button>
+    </div>
+    
+  
+    <div class="pricing-cards">
+      <div class="card" 
+           data-title-without="Day" 
+           data-text-without="Basic gym access for a day." 
+           data-price-without="Rs15,000"
+           data-title-with="Day + Trainer"
+           data-text-with="Gym access with personal trainer for a day." 
+           data-price-with="Rs20,000">
+        <h3>Day</h3>
+        <p>Basic gym access for a day.</p>
+        <h2 class="price">Rs15,000</h2>
+        <ul>
+          <li>✔️ Full equipment access</li>
+          <li>✔️ Locker room</li>
+          <li>✔️ Free water</li>
+        </ul>
+        <button class="btn-purple">Join Now</button>
+      </div>
+  
+      <div class="card" 
+           data-title-without="Week" 
+           data-text-without="One week gym pass." 
+           data-price-without="Rs60,000"
+           data-title-with="Week + Trainer"
+           data-text-with="One week gym pass with trainer." 
+           data-price-with="Rs90,000">
+        <h3>Week</h3>
+        <p>One week gym pass.</p>
+        <h2 class="price">Rs60,000</h2>
+        <ul>
+          <li>✔️ Unlimited access</li>
+          <li>✔️ Nutritional guidance</li>
+          <li>✔️ Free sauna</li>
+        </ul>
+        <button class="btn-purple">Join Now</button>
+      </div>
+  
+      <div class="card" 
+           data-title-without="Month" 
+           data-text-without="Monthly gym membership." 
+           data-price-without="Rs150,000"
+           data-title-with="Month + Trainer"
+           data-text-with="Monthly membership with personal training." 
+           data-price-with="Rs200,000">
+        <h3>Month</h3>
+        <p>Monthly gym membership.</p>
+        <h2 class="price">Rs150,000</h2>
+        <ul>
+          <li>✔️ Personalized workout plan</li>
+          <li>✔️ Weekly trainer session</li>
+          <li>✔️ 24/7 support</li>
+        </ul>
+        <button class="btn-purple">Join Now</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="trainers-section">
+    <div class="trainers-left">
+      <h2>Our Trainers</h2>
+      <p>
+        Our team of dedicated professionals are here to help you thrive. <br>
+        Training. Nutrition. Motivation — all personalized to your goals.
+      </p>
+      <button class="btn-outline">View Trainers</button>
+    
+    </div>
+
+    <div class="trainers-right">
+      <div class="trainer-card">
+        <img src="https://i.pravatar.cc/300?img=12" alt="Jack Drake">
+        <div class="trainer-info">
+          <h3>Jack Drake</h3>
+          <span>Trainer</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="https://i.pravatar.cc/300?img=47" alt="Nathaniel">
+        <div class="trainer-info">
+          <h3>Nathaniel</h3>
+          <span>Trainer</span>
+        </div>
+      </div>
+
+      
+    </div>
+  </section>
+
+
+
+  <section class="contact-section">
+    <h2>It's the right<br><span class="highlight">moment to Join Us</span></h2>
+
+    <div class="contact-card">
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> info@nexsteg.com</p>
+        <p><i class="fas fa-phone"></i> +6298988772233</p>
+        <p><i class="fas fa-map-marker-alt"></i> Block-1 Street 127, Mahboula, KUWAIT</p>
+      </div>
+
+      <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15718.925741098361!2d76.2454046!3d9.9562884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b086d3fbb7fe61b%3A0x2d8c24f0608b98b!2sKochi%2C%20Kerala%20682001!5e0!3m2!1sen!2sin!4v1751742016187!5m2!1sen!2sin"
+           width="100%" 
+           height="100%" 
+           style="border:0;" 
+           allowfullscreen="" 
+           loading="lazy" 
+           referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+          
+      </div>
+
+      <div class="social-icons">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tiktok"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+
+    <footer>© 2024, All Right Reserved.</footer>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    const btnWithout = document.getElementById("btn-without");
+    const btnWith = document.getElementById("btn-with");
+    const cards = document.querySelectorAll(".pricing-cards .card");
+  
+    function updatePricing(type) {
+      // Toggle button color
+      btnWithout.classList.toggle("active", type === "without");
+      btnWith.classList.toggle("active", type === "with");
+  
+      // Update each card content
+      cards.forEach(card => {
+        const title = card.querySelector("h3");
+        const desc = card.querySelector("p");
+        const price = card.querySelector(".price");
+  
+        if (type === "with") {
+          title.textContent = card.getAttribute("data-title-with");
+          desc.textContent = card.getAttribute("data-text-with");
+          price.textContent = card.getAttribute("data-price-with");
+        } else {
+          title.textContent = card.getAttribute("data-title-without");
+          desc.textContent = card.getAttribute("data-text-without");
+          price.textContent = card.getAttribute("data-price-without");
+        }
+      });
+    }
+  
+    // Add event listeners
+    btnWithout.addEventListener("click", () => updatePricing("without"));
+    btnWith.addEventListener("click", () => updatePricing("with"));
+  </script>
+  
+  
+  
+  
+
+</body>
+</html>
+
+
+
+

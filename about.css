@@ -1,0 +1,618 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 0, 0));
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 6%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+}
+
+.logo {
+  width: 179px;
+  height: 44px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  position: relative;
+}
+
+nav a.active,
+nav a:hover {
+  color: #fff;
+}
+
+nav a.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #9c27b0;
+  bottom: -5px;
+  left: 0;
+}
+
+.cta-header-btn {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 5px 0 #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-narrow-triangle {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(146, 0, 250, 0.897)), 
+              url('thumbnail.jpg') no-repeat center center/cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* Top Triangle */
+.top-triangle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 650px;
+  height: 50vh;
+  background: #130e16cc;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Bottom Triangle with gradient slope */
+.bottom-triangle {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 650px;
+  height: 50vh;
+  background: 
+    linear-gradient(to top, #000000 0%, #00000000 30%, transparent 100%),
+    linear-gradient(to right, transparent, rgba(0, 0, 0, 0.767) 30%, rgba(6, 2, 8, 0.616) 70%, transparent);
+  clip-path: polygon(0 100%, 100% 100%, 50% 0);
+  box-shadow: 0 -20px 40px rgba(168, 62, 62, 0.4);
+  z-index: 1;
+}
+
+/* Optional slope glow */
+.bottom-triangle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at left center, rgb(7, 4, 8), transparent 70%),
+              radial-gradient(circle at right center, rgba(25, 15, 32, 0.2), transparent 70%);
+  clip-path: polygon(0 100%, 100% 100%, 50% 0);
+  z-index: -1;
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.video-button {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.video-button img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.video-button span {
+  font-size: 1rem;
+}
+
+
+
+/*////////////////////////service-section*/
+.services-section {
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.vision {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.vision-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.vision-text h3 {
+  font-size: 28px;
+  color: #fff;
+}
+
+.vision-text span {
+  color: #b400ff;
+  font-weight: 600;
+}
+
+.vision-video {
+  height: 300px;
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+}
+
+.vision-video img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.section-title {
+  text-align: center;
+  color: #b400ff;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns:repeat(3, 1fr) ;
+  gap: 25px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.icon {
+  font-size: 36px;
+  color: #b400ff;
+  margin-bottom: 15px;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+
+ /*////////////////////////////////////about-section */
+
+ .about-section {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.about-overlay {
+
+  background: 
+  linear-gradient( rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.473)),
+  url('gym-bg.jpg') no-repeat center center/cover;
+  padding: 100px 0px;
+  padding-right: 600px;
+  padding-left: 20px;
+  min-height: 0px;
+  max-width: 1000px;
+  border-radius: 50px;
+  text-align: left;
+
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.btn-purple {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #9c27b0, #6b00b6);
+  border: none;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  min-width: 100px;
+}
+
+.btn-purple i {
+  margin-left: 8px;
+}
+
+.about-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.about-icons img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #9c27b0;
+  object-fit: cover;
+}
+
+
+
+
+
+  /* Pricing Section */
+  .pricing-section {
+    text-align: center;
+    padding: 80px 40px;
+  }
+  
+  .pricing-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-btns {
+    margin: 20px auto 40px;
+    background-color: #1e1e1e;
+    border-radius: 30px;
+    display: inline-flex;
+    overflow: hidden;
+  }
+  
+  .toggle {
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .toggle.active {
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+  }
+  
+  
+  .pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 25px;
+    width: 280px;
+    text-align: left;
+    transition: 0.3s ease;
+  }
+  
+  .card.highlighted {
+    background: #222;
+    border: 2px solid #9c27b0;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .card .price {
+    font-size: 2rem;
+    color: #fff;
+    margin: 20px 0;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .card ul li {
+    margin-bottom: 10px;
+  }
+  
+  .btn-purple {
+    background: #9c27b0;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+
+
+
+
+  
+  /* Trainers Section */
+  .trainers-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    padding: 80px 0px;
+    overflow: hidden;
+  }
+  
+  /* Left Side Triangle Background */
+  .trainers-left {
+    width: 70%;
+    height: 700px;
+    padding-top: 250px;
+    padding-left: 30px;
+    background: linear-gradient(to bottom right, #6b00b6, #000);
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    z-index: 2;
+  }
+  
+  .trainers-left h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .trainers-left p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .btn-outline {
+    background: transparent;
+    border: 2px solid #9c27b0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .btn-outline:hover {
+    background: #9c27b0;
+    border-color: transparent;
+  }
+  
+  /* Right Side Cards */
+  .trainers-right {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    gap:20px;
+    margin-left: -100px; /* Pull into the visible area outside triangle */
+    z-index: 3;
+    position: relative;
+  }
+  
+  .trainer-card {
+    background: #1a1a1a;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 220px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .trainer-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .trainer-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+  
+  .trainer-info {
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+  .trainer-info h3 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .trainer-info span {
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+  
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .trainers-section {
+      flex-direction: column;
+      padding: 60px 20px;
+    }
+  
+    .trainers-left {
+      width: 100%;
+      clip-path: none;
+      background: linear-gradient(to right, #6b00b6, #000);
+    }
+  
+    .trainers-right {
+      width: 100%;
+      margin-left: 0;
+      align-items: center;
+    }
+  }
+
+  
+
+
+  /*//////////////contact-section*/
+
+
+  
+  
+  .contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient( to top , #181818, #000000);
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .contact-section .highlight {
+    color: #a200ff;
+  }
+  
+  .contact-card {
+    margin: 0 auto;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-info {
+    text-align: left;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
+  .contact-info i {
+    margin-right: 10px;
+    color: #6600DD;
+  }
+  
+  .map-wrapper {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #222;
+  }
+  
+  .social-icons {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons i {
+    color: #6600DD;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .social-icons i:hover {
+    color: #000000;
+  }
+  
+  footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #888;
+  }

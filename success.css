@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 0, 0));
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 6%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent;
+  }
+  
+  .logo {
+    width: 179px;
+    height: 44px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  nav a.active,
+  nav a:hover {
+    color: #fff;
+  }
+  
+  nav a.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #9c27b0;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  .cta-header-btn {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 5px 0 #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero-narrow-triangle {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.733), rgba(146, 0, 250, 0.897)), 
+                url('thumbnail.jpg') no-repeat center center/cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Top Triangle */
+  .top-triangle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 650px;
+    height: 50vh;
+    background: #130e16cc;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  /* Bottom Triangle with gradient slope */
+  .bottom-triangle {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 650px;
+    height: 50vh;
+    background: 
+      linear-gradient(to top, #000000 0%, #00000000 30%, transparent 100%),
+      linear-gradient(to right, transparent, rgba(0, 0, 0, 0.767) 30%, rgba(6, 2, 8, 0.616) 70%, transparent);
+    clip-path: polygon(0 100%, 100% 100%, 50% 0);
+    box-shadow: 0 -20px 40px rgba(168, 62, 62, 0.4);
+    z-index: 1;
+  }
+  
+  /* Optional slope glow */
+  .bottom-triangle::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at left center, rgb(7, 4, 8), transparent 70%),
+                radial-gradient(circle at right center, rgba(25, 15, 32, 0.2), transparent 70%);
+    clip-path: polygon(0 100%, 100% 100%, 50% 0);
+    z-index: -1;
+  }
+  
+  /* Content */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+  
+  .video-button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .video-button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .video-button span {
+    font-size: 1rem;
+  }
+  
+
+
+
+
+
+  /*//////////vision section /////*/
+.vision-section{
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 120px;
+  }
+  
+  .vision-text {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .vision-text h3 {
+    font-size: 28px;
+    color: #fff;
+  }
+  
+  .vision-text span {
+    color: #b400ff;
+    font-weight: 600;
+  }
+  
+  .vision-video {
+    height: 300px;
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .vision-video img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  
+
+
+  .transformation-section {
+    position: relative;
+    background: #000;
+    padding: 100px 40px;
+    overflow: hidden;
+  }
+  
+
+  
+  .transformation-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .text-content {
+    flex: 1;
+    color: white;
+    padding: 20px;
+    max-width: 600px;
+  }
+  
+  .text-content h2 {
+    font-size: 2rem;
+    color: #b400ff;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .image-content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px #6600dd;
+
+  }
+  
+
+
+
+
+
+
+
+  .contact-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #3332320c, rgb(17, 17, 17));
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .contact-section .highlight {
+    color: #a200ff;
+  }
+  
+  .contact-card {
+    margin: 0 auto;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-info {
+    text-align: left;
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
+  .contact-info i {
+    margin-right: 10px;
+    color: #6600DD;
+  }
+  
+  .map-wrapper {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #222;
+  }
+  
+  .social-icons {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons i {
+    color: #6600DD;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .social-icons i:hover {
+    color: #000000;
+  }
+  
+  footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #888;
+  }
